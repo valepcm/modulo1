@@ -26,7 +26,8 @@ public class CicloCalificaciones {
 			calificacion = sc.nextDouble();
 			}
 			else {
-				System.out.println("La calificaion no es valida. \n Ingrese una calificacion entre 0 y 10 ");n
+				System.out.println("La calificaion no es valida. \nIngrese una calificacion entre 0 y 10 ");
+				calificacion = sc.nextDouble();
 			}
 			
 		}
