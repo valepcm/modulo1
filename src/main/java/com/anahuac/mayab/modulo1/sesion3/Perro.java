@@ -20,6 +20,16 @@ public class Perro {
 		this.nombreDuenio = nombreDuenio;
 		this.edad = edad;
 	}
+	
+
+	public Perro(String raza, String nombre, int edad, String nombreDuenio) {
+		super();
+		this.raza = raza;
+		this.nombre = nombre;
+		this.edad = edad;
+		this.nombreDuenio = nombreDuenio;
+	}
+
 
 	public Perro() {
 	}
@@ -71,6 +81,13 @@ public class Perro {
 	//Metodos - cosas que hace
 	public void ladrar() {
 		System.out.println("Me llamo " + nombre + " mi duenio es " + nombreDuenio + " y estoy ladrando, guau guau!");
+	}
+
+
+	@Override
+	public String toString() {
+		return "Perro [raza=" + raza + ", tamanio=" + tamanio + ", peso=" + peso + ", nombre=" + nombre
+				+ ", nombreDuenio=" + nombreDuenio + ", edad=" + edad + "]";
 	}
 	
 }
