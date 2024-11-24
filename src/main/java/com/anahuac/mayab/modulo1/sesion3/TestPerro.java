@@ -53,7 +53,7 @@ public class TestPerro {
 			int numeroAleatorio = generadorRandom.nextInt(nombres.length);
 			perroTemporal.setNombreDuenio(duenios[numeroAleatorio]);
 			
-			//Ya que estan seteados los valores, ahora guardo en la lista
+			//Una vez setteados, guardar en el mapa
 			listaPerros.add(perroTemporal);
 		}
 		
