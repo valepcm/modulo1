@@ -64,7 +64,7 @@ public class TestPerro {
 		//Búsqueda de un perro
 		for(i= 0; i< listaPerros.size(); i++) {
 			String nombre = listaPerros.get(i).getNombre();
-			if (nombre == "perro6") {
+			if (nombre == "Bruno") {
 				listaPerros.get(i).setNombre("Keka");
 				break;
 			}
