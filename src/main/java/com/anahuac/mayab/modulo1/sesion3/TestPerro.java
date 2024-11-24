@@ -24,7 +24,7 @@ public class TestPerro {
 		
 		//Arreglo de perros
 		Perro[] misPerros = new Perro[10];
-		String [] nombres = {"perro1", "perro2", "perro3", "perro4", "perro5", "perro6", "perro7", "perro8", "perro9", "perro10"};
+		String [] nombres = {"Pepper", "Taco", "Tamal", "Torta", "Bruno", "Doris", "Satuno", "Kraken", "Pan", "Mimi"};
 		String [] duenios = {"Tomas", "Luis", "Carlos", "Jose", "Andres", "Ricardo", "Rodrigo", "Tania", "Andrea", "Carla"};
 		
 		for (int i = 0; i < 10; i++) {
@@ -42,7 +42,7 @@ public class TestPerro {
 			misPerros[i].ladrar();
 		}
 		
-		System.out.println("----- Ahora usando un arraylist ------- ");
+		System.out.println("----- Ahora usando un arraylist ------- \n");
 		//Ahora vamos a usar un arrayList
 		ArrayList<Perro> listaPerros = new ArrayList<Perro>();
 		
@@ -65,23 +65,23 @@ public class TestPerro {
 		for(i= 0; i< listaPerros.size(); i++) {
 			String nombre = listaPerros.get(i).getNombre();
 			if (nombre == "perro6") {
-				listaPerros.get(i).setNombre("Nuevo nombre del perro");
+				listaPerros.get(i).setNombre("Keka");
 				break;
 			}
 		}
 		
-		System.out.println("---- Después de cambiar el nombre");
+		System.out.println("----- Después de cambio de nombre ----- \n");
 		
 		for( i = 0; i < 10; i++) {
 			listaPerros.get(i).ladrar();
 		}
 		
-		System.out.println("---- For each ");
+		System.out.println("----- For Each ----- \n");
 		for(Perro perro : listaPerros) {
 			perro.ladrar();
 		}
 		
-		System.out.println("---- Usando un hashMap ");
+		System.out.println("----- Con Hash Map ----- \n");
 		HashMap<Integer, Perro> mapPerros = new HashMap<>();
 		
 		for( i = 0; i < 10; i++) {
@@ -90,20 +90,21 @@ public class TestPerro {
 			int numeroAleatorio = generadorRandom.nextInt(nombres.length);
 			perroTemporal.setNombreDuenio(duenios[numeroAleatorio]);
 			
-			//Ya que estan seteados los valores, ahora guardo en el mapa
+			//Una vez setteados, guardar en el mapa
 			mapPerros.put(i,perroTemporal);
+			perroTemporal.ladrar();
 		}
-		System.out.println("---- Usando un hashMap con keyset ");
+		System.out.println("----- Hash Map con keyset ----- \n");
 	
 		for(Integer ii : mapPerros.keySet()) {
 			mapPerros.get(ii).ladrar();
 		}
-		System.out.println("---- Usando un hashMap con entryset");
+		System.out.println("----- Hash Map con entryset ----- \n");
 		for(Entry<Integer, Perro> entry : mapPerros.entrySet()) {
 			entry.getValue().ladrar();
 		}
 		
-		System.out.println("---- Usando un hashMap con values");
+		System.out.println("----- Hash Map con values ----- \n");
 		
 		for(Perro p : mapPerros.values()) {
 			p.ladrar();
