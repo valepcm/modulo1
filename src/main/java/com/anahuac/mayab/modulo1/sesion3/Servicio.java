@@ -5,6 +5,7 @@ public abstract class Servicio {
 	private double costo;
 	private String fecha;
 	private String encargado;
+	private CartillaPerro cartilla;
 	
 
 	public Servicio(String tipo, double costo, String fecha, String encargado) {
@@ -15,6 +16,14 @@ public abstract class Servicio {
 		this.encargado = encargado;
 	}
 
+	public void setCartillaPerro(CartillaPerro c) {
+		this.cartilla = c;
+	}
+	
+	public CartillaPerro getCartilla() {
+		return cartilla;
+	}
+	
 	public String getTipo() {
 		return tipo;
 	}

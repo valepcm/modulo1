@@ -16,6 +16,7 @@ public class ServicioMedico extends Servicio {
 	
 	@Override
 	public void realizar(String nombre) {
+		getCartilla().actualizar(getTipo(), getFecha());
 		consultar(nombre);
 		darReceta();
 	}

@@ -1,0 +1,6 @@
+---- Datos Perro -----
+Perro [raza=Única, tamanio=null, peso=0.0, nombre=Firulais, nombreDuenio=Vale, edad=0]
+------------
+Vacuna : vacuna
+Fecha : 16-Nov-2024
+------------

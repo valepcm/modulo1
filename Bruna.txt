@@ -1,0 +1,6 @@
+---- Datos Perro -----
+Perro [raza=Schnauzer, tamanio=null, peso=0.0, nombre=Bruna, nombreDuenio=Alfredo, edad=0]
+------------
+Vacuna : consulta
+Fecha : 23-Nov-2024
+------------

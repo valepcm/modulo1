@@ -78,7 +78,7 @@ public class CartillaPerro {
 	}
 	
 	public void imprimirExpediente() throws IOException {
-		String nombreArchivo = "C:\\miPerro\\"+datosPerro.getNombre()+".txt";
+		String nombreArchivo = datosPerro.getNombre()+".txt";
 		FileWriter archivo;
 		//try {
 			archivo = new FileWriter(nombreArchivo);
