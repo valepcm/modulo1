@@ -10,6 +10,14 @@ public class Perro {
 	private String nombreDuenio;
 	private int edad;
 	
+	public Perro() {
+	    this.raza = "Desconocida";
+	    this.tamanio = "Mediano";
+	    this.peso = 0.0;
+	    this.nombre = "Sin nombre";
+	    this.nombreDuenio = "Sin dueño";
+	    this.edad = 0;
+	}
 	
 	public Perro(String raza, String tamanio, double peso, String nombre, String nombreDuenio, int edad) {
 		super();
@@ -29,9 +37,11 @@ public class Perro {
 		this.edad = edad;
 		this.nombreDuenio = nombreDuenio;
 	}
-
-
-	public Perro() {
+	
+	public Perro(String raza, String nombre, String nombreDuenio) {
+		this.raza = raza;
+		this.nombre = nombre;
+		this.nombreDuenio = nombreDuenio;
 	}
 	
 	
